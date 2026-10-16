@@ -5,6 +5,7 @@ description = "Inbound lead qualification agent"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "alembic>=1.20.0",
     "fastapi>=0.143.0",
     "greenlet>=3.5.6",
     "psycopg[binary]>=3.3.6",
