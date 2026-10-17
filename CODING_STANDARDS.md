@@ -54,7 +54,7 @@ Never disable a lint rule inline without a comment explaining why. That comment 
 | G-2 | **Explicit over implicit.** Use domain names (`lead`, `tier`, `fit_signals`, `job`) instead of generic ones (`data`, `item`, `result`, `info`). No abbreviations except universal ones (`id`, `url`, `api`, `llm`). | 3 |
 | G-3 | **Single responsibility.** Each function does one thing. Each module owns one concept. If the description needs an "and", split it. | 3 |
 | G-4 | **Fail fast and loud.** Validate at the boundary. Raise descriptive, typed errors. Never swallow an exception silently. | 1 (`ruff` BLE, S110) + 3 |
-| G-5 | **No dead code.** Delete unused functions, commented-out blocks and obsolete files. Git is the backup. | 1 (`ruff` F, ERA) |
+| G-5 | **No dead code.** Delete unused functions, commented-out blocks and obsolete files. Git is the backup. Generated scaffolding (e.g. Alembic env.py, script.py.mako) is exempt. | 1 (`ruff` F, ERA) |
 | G-6 | **Small, reviewable diffs.** One issue, one PR. If I can't hold the change in my head, split it. | 3 |
 | G-7 | **Comments explain why, not what.** A comment that restates the code is worse than no comment. A comment that records a decision (why this constant, which failure caused this guard) is the most durable documentation there is. | 3 |
 | G-8 | **I can explain every line.** If I can't explain a line, it doesn't merge. "The AI suggested it" is not an explanation. | 3 |
