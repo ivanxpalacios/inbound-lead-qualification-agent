@@ -31,7 +31,7 @@ Read this file before doing anything. Also read [`PRD.md`](PRD.md) for what we'r
 A `PreToolUse` hook in `.claude/settings.json` blocks Claude Code from writing to these paths (Edit, Write, and shell redirects/`sed -i`/`cp`/`mv`/`rm`). Don't try to work around it. If the hook blocks you, that's the rule working: switch to giving a hint.
 
 ```
-backend/src/rackwise/{domain,ingest,queue,pipeline,agent,tools,llm,limits,crm,scoring,rag,mcp_server}/
+backend/src/leadqual/{domain,ingest,queue,pipeline,agent,tools,llm,limits,crm,scoring,rag,mcp_server}/
 backend/migrations/versions/
 backend/tests/            (except backend/tests/fixtures/)
 frontend/src/lib/

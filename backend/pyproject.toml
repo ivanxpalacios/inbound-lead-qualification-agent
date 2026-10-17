@@ -1,0 +1,18 @@
+[project]
+name = "leadqual"
+version = "0.1.0"
+description = "Inbound lead qualification agent"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi>=0.143.0",
+    "greenlet>=3.5.6",
+    "psycopg[binary]>=3.3.6",
+    "pydantic-settings>=2.15.0",
+    "sqlalchemy>=2.1.4",
+    "uvicorn>=0.54.0",
+]
+[build-system]
+requires = ["uv_build>=0.11.29,<0.12"]
+build-backend = "uv_build"

@@ -557,7 +557,7 @@ The **AI help** column follows [`AGENTS.md`](AGENTS.md). "Hints" means the AI gi
 
 ```
 backend/
-  src/rackwise/
+  src/leadqual/
     main.py, config.py, db.py      → app wiring (scaffolding)
     domain/                         → Pydantic models, error types
     ingest/                         → webhook endpoints, signatures, idempotency
