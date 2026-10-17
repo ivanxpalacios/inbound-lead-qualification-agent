@@ -13,7 +13,11 @@ from leadqual.config import settings
 # access to the values within the .ini file in use.
 config = context.config
 
-config.set_main_option("sqlalchemy.url", settings.database_url.get_secret_value())
+# ConfigParser treats % as interpolation; URL-encoded passwords contain it.
+config.set_main_option(
+    "sqlalchemy.url", 
+    settings.database_url.get_secret_value().replace("%", "%%")
+)
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
