@@ -1,10 +1,11 @@
+from typing import Literal
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
     app_name: str = "Inbound Lead Qualification Agent API"
-    environment: str = "development"
+    environment: Literal["development", "test", "production"] = "development"
     debug: bool = False
     database_url: SecretStr
 
