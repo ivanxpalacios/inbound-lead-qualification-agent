@@ -4,7 +4,6 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 
 from leadqual.config import settings
 
-# Creates the connection pool
 engine = create_async_engine(settings.database_url.get_secret_value())
 
 # Template that knows how to create a session on one of the connections from the engine
