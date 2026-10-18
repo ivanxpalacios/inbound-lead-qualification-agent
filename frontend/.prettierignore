@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+build
+dist
+pnpm-lock.yaml
+next-env.d.ts
+src/lib/api-types.ts
